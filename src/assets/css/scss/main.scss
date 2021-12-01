@@ -1,0 +1,225 @@
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+}
+
+header {
+    height: 8vh;
+    background-color: $maincolor;
+    color: $white;
+}
+
+.carousel {
+    color: $black;
+}
+
+.carousel-image {
+    height: 92vh;
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    & span:nth-child(1) {
+        color: $white;
+    }
+    & span:nth-child(2) {
+        color: $secondarycolor;
+    }
+}
+
+.carousel__link {
+    background-color: $maincolor;
+    color: $white;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &:hover {
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+        background-color: $white;
+        color: $maincolor;
+    }
+
+    &:not(:hover) {
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+    }
+}
+
+.title {
+    color: $maincolor;
+}
+
+.card-title {
+    color: $maincolor;
+}
+
+.why {
+    height: 350px;
+
+    &__text {
+        width: 40%;
+    }
+}
+
+.needed {
+    color: $secondarycolor;
+    font-weight: 600;
+}
+
+.open {
+    width: 10%;
+
+    &__hour {
+        color: $maincolor;
+    }
+}
+
+.sidebar {
+    background-color: $maincolor;
+    height: 92vh;
+    width: 22vw;
+}
+
+.white {
+    color: $white;
+}
+
+form {
+    width: 40%;
+}
+
+.form {
+    label {
+        color: $maincolor;
+    }
+
+    p {
+        color: $maincolor;
+    }
+}
+
+
+.gmap_canvas {overflow:hidden;background:none!important;height:388px;width:441px;}
+
+.mapouter{position:relative;text-align:right;height:388px;width:441px;}
+
+.square-container {
+    height: 125px;
+    background-color: $maincolor;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.square {
+    &-s {
+        width: 25px;
+        height: 25px;
+        border: 2px solid $white;
+        margin: auto;
+    }
+
+    &-m {
+        width: 50px;
+        height: 50px;
+        border: 2px solid $white;
+        margin: auto;
+    }
+
+    &-l {
+        width: 75px;
+        height: 75px;
+        border: 2px solid $white;
+        margin: auto;
+    }
+
+    &-xl {
+        width: 100px;
+        height: 100px;
+        border: 2px solid $white; 
+        margin: auto;
+    }
+}
+
+.link {
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: $secondarycolor;
+    color: $white;
+    padding: 0.4rem;
+    border-radius: 8px;
+    transition: all 300ms;
+
+    &:hover{
+        border: 1px solid;
+        color: $secondarycolor;
+        background-color: $white;
+        transition: all 300ms;
+    }
+}
+
+.button {
+    font-size: 1.2em;
+    box-sizing: border-box;
+    border: transparent;
+    background-color: $secondarycolor;
+    color: $white;
+    padding: 0.4rem;
+    border-radius: 8px;
+    transition-property: border, background-color, color;
+    transition-duration: 300ms;
+
+    &:hover{
+        border: 1px solid;
+        color: $secondarycolor;
+        background-color: $white;
+        transition-property: border, background-color, color;
+        transition-duration: 300ms;
+    }
+}
+
+.start-button {
+    position: absolute;
+    top: 49vh;
+}
+
+.premade-items {
+    height: 100%;
+    width: 50%;
+}
+
+
+.calculator {
+    height: 92vh;
+}
+
+.range {
+    cursor: pointer;
+}
+
+.input-n {
+    height: 1.5em;
+}
+
+.delete-item {
+    background-color: $black;
+    font-size: 0.6em;
+}

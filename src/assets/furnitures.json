@@ -1,0 +1,90 @@
+{
+    "armchair": {
+        "name": "Fauteuil",
+        "width": 90,
+        "length": 93,
+        "height": 103,
+        "stackable": false,
+        "src": "../assets/img/armchair.png"
+    },
+    "bed": {
+        "name": "Lit",
+        "width": 150,
+        "length": 200,
+        "height": 50,
+        "stackable": true,
+        "src": "../assets/img/bed.png"
+    },
+    "cabinet": {
+        "name": "Armoire",
+        "width": 60,
+        "length": 30,
+        "height": 180,
+        "stackable": true,
+        "src": "../assets/img/cabinet.png"
+    },
+    "chair": {
+        "name": "Chaise",
+        "width": 40,
+        "length": 40,
+        "height": 60,
+        "stackable": false,
+        "src": "../assets/img/chair.png"
+    },
+    "chest": {
+        "name": "Commode",
+        "width": 70,
+        "length": 40,
+        "height": 50,
+        "stackable": true,
+        "src": "../assets/img/chest.png"
+    },
+    "computer": {
+        "name": "Ordinateur",
+        "width": 20,
+        "length": 30,
+        "height": 40,
+        "stackable": false,
+        "src": "../assets/img/computer.png"
+    },
+    "couch": {
+        "name": "Sofa",
+        "width": 150,
+        "length": 60,
+        "height": 80,
+        "stackable": true,
+        "src": "../assets/img/couch.png"
+    },
+    "fridge": {
+        "name": "Réfrigirateur",
+        "width": 60,
+        "length": 60,
+        "height": 160,
+        "stackable": true,
+        "src": "../assets/img/fridge.png"
+    },
+    "table": {
+        "name": "Table",
+        "width": 100,
+        "length": 70,
+        "height": 55,
+        "stackable": true,
+        "src": "../assets/img/table.png"
+    },
+    "tv": {
+        "name": "Télévision",
+        "width": 90,
+        "length": 10,
+        "height": 40,
+        "stackable": false,
+        "src": "../assets/img/tv.png"
+    },
+    "washmachine": {
+        "name": "Machine à laver",
+        "width": 60,
+        "length": 60,
+        "height": 60,
+        "stackable": true,
+        "src": "../assets/img/washmachine.png"
+    }
+}

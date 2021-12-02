@@ -28,11 +28,11 @@ function Calculator() {
                 "mcube": e.target.previousElementSibling.children[0].innerHTML
              }));
             incrementCount(c => c + 1);
-            setNeeded(needed + (parseFloat(e.target.previousElementSibling.children[0].innerHTML)).toFixed(2));
+            setNeeded(needed + parseFloat(e.target.previousElementSibling.children[0].innerHTML));
     }
 
     const deleteItem = (e) => {
-        setNeeded(needed - (parseFloat(e.target.previousElementSibling.children[0].innerHTML)).toFixed(2))
+        setNeeded(needed - parseFloat(e.target.previousElementSibling.children[0].innerHTML));
         e.target.parentNode.remove();
     }   
 
@@ -61,7 +61,7 @@ function Calculator() {
         if (item.width && item.length && item.height && item.name) {
             localStorage.setItem(count, JSON.stringify(item));
             incrementCount(c => c + 1);
-            setNeeded((parseFloat(needed) + (item.width * item.length * item.height) * (Math.pow(10, -6))).toFixed(2));
+            setNeeded(parseFloat(needed) + ((item.width * item.length * item.height) * (Math.pow(10, -6))));
         }
     }
 
@@ -85,7 +85,7 @@ function Calculator() {
             <div className="sidebar overflow-auto">
                 <p className="h4 title white mt-3 ps-2">Calculateur d'espace</p>
                 <p className="mt-2 ms-2 needed text-align-center">
-                    Espace nécessaire : {needed} m³
+                    Espace nécessaire : {needed.toFixed(2)} m³
                 </p>
                 <p className="title white mt-3 ps-2">Derniers items ajoutés</p>
                 <div id="items" className="items">
@@ -137,7 +137,7 @@ function Calculator() {
                         </div>
                     </div>
                     <StyledButton clicked={handleSubmit} text="Ajouter" className="mt-3 mb-5" type="submit" />
-                    {needed != 0 ?<p class="h4 text-center mt-5">Vous avez besoin de {needed} m³</p>: ""}
+                    {needed != 0 ?<p class="h4 text-center mt-5">Vous avez besoin de {needed.toFixed(2)} m³</p>: ""}
                     {needed != 0 ?<p class="h5 text-center">Le container le plus adapté est le container {getRightContainer()} </p>: ""}
                 </form>
             </div>
